@@ -1,0 +1,150 @@
+<!--
+  Generated template for the HistoryFourthPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="bluecl">
+    <ion-title>History Category Level FOUR</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="background"> 
+    <div>
+    <ion-slides pager="true">
+    <ion-slide class="s" >
+    <h3>Question 1 of 5</h3><br>
+    <ion-list radio-group [(ngModel)]=Ans1 >
+    <fieldset class="fie">
+    <legend class="leg"> In which year was Nelson Mandela released?
+    </legend>
+
+    <ion-item class="t">
+      <ion-label>1990</ion-label>
+      <ion-radio checked="true" value="1990" (click)="goToSlide()"></ion-radio>
+    </ion-item>
+
+    <ion-item class="t">
+      <ion-label>1994</ion-label>
+      <ion-radio value="1994" (click)="goToSlide()"></ion-radio>
+    </ion-item>
+
+    <ion-item class="t">
+      <ion-label>1995</ion-label>
+      <ion-radio value="1995" (click)="goToSlide()"></ion-radio>
+    </ion-item>     
+    </fieldset>
+    </ion-list><br>
+    </ion-slide>
+
+    <ion-slide class="s">
+    <h3>Question 2 of 5</h3><br>
+    <ion-list radio-group [(ngModel)]=Ans2>
+    <fieldset class="fie">
+    <legend class="leg"> Which right wing organization was headed by Eugene Terrblanche?
+    </legend>
+    <ion-item class="t">
+        <ion-label>ADB</ion-label>
+        <ion-radio checked="true" value="ADB" (click)="goToSlide3()"></ion-radio>
+    </ion-item>
+
+    <ion-item class="t">
+        <ion-label>AWB</ion-label>
+        <ion-radio value="AWB" (click)="goToSlide3()"></ion-radio>
+    </ion-item>
+
+    <ion-item class="t">
+        <ion-label>EFF</ion-label>
+        <ion-radio value="EFF" (click)="goToSlide3()"></ion-radio>
+    </ion-item>   
+    </fieldset>
+    </ion-list><br>
+    </ion-slide>
+
+
+    <ion-slide class="s">
+    <h3>Question 3 of 5</h3><br> 
+    <ion-list radio-group [(ngModel)]=Ans3>
+    <fieldset class="fie">
+    <legend class="leg">Which prison was Nelson Mandela moved to after he left Robben Island?
+    </legend>
+    <ion-item class="t">
+    <ion-label>Robben Island</ion-label>
+    <ion-radio checked="true" value="Robben Island" (click)="goToSlide4()"></ion-radio>
+    </ion-item>
+
+    <ion-item class="t">
+    <ion-label>Victor Verster</ion-label>
+    <ion-radio value="Victor Verster" (click)="goToSlide4()"></ion-radio>
+    </ion-item>
+
+    <ion-item class="t">
+    <ion-label>Five</ion-label>
+    <ion-radio value="Five" (click)="goToSlide4()"></ion-radio>
+    </ion-item>       
+    </fieldset>
+    </ion-list><br>
+
+    </ion-slide>
+
+    <ion-slide  class="s">
+    <h3>Question 4 of 5</h3><br>
+    <ion-list radio-group [(ngModel)]=Ans4>
+    <fieldset class="fie">
+      <legend class="leg">Who made the infamous “Rubicon” speech in 1985?
+      </legend>
+
+      <ion-item class="t">
+          <ion-label>John Cock</ion-label>
+          <ion-radio checked="true" value="John Cock" (click)="goToSlide5()"></ion-radio>
+      </ion-item>
+      
+      <ion-item class="t">
+          <ion-label>P.W Botha</ion-label>
+          <ion-radio value="P.W Botha" (click)="goToSlide5()"></ion-radio>
+      </ion-item>
+      
+      <ion-item class="t">
+          <ion-label>Vasco Da Gama</ion-label>
+          <ion-radio value="Vasco Da Gama" (click)="goToSlide5()"></ion-radio>
+      </ion-item>
+        
+    </fieldset>
+    </ion-list><br>
+    </ion-slide>
+
+    <ion-slide class="s">
+    <h3>Question 5 of 5</h3><br>
+    <ion-list  radio-group [(ngModel)]=Ans5>
+    <fieldset class="fie">
+      <legend class="leg">Who was awarded the Nobel Peace Prize in 1984?
+      </legend>
+      
+      <ion-item class="t">
+          <ion-label>Nelson Mandela</ion-label>
+          <ion-radio checked="true" value="Nelson Mandela"></ion-radio>
+      </ion-item>
+      
+      <ion-item class="t">
+          <ion-label>Desmond Tutu</ion-label>
+          <ion-radio value="Desmond Tutu"></ion-radio>
+      </ion-item>
+      
+      <ion-item class="t">
+          <ion-label>Thabo Mbeki</ion-label>
+          <ion-radio value="Thabo Mbeki"></ion-radio>
+      </ion-item>    
+    </fieldset>
+    </ion-list><br><br>
+    <button ion-button full round color="primary" (click)="addTotal()">Submit</button>   
+    </ion-slide>
+    </ion-slides>
+
+    </div>
+
+
+    </ion-content>
+

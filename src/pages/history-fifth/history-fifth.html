@@ -1,0 +1,151 @@
+<!--
+  Generated template for the HistoryFifthPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="purplecl">
+      <ion-title >History Category Level FIVE</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+        <ion-content padding class="background"> 
+        <div>
+        <ion-slides pager="true">
+        <ion-slide class="s" >
+        <h3>Question 1 of 5</h3><br>
+        <ion-list radio-group [(ngModel)]=Ans1 >
+        <fieldset class="field">
+        <legend class="l">After a day of demonstrations against Pass Laws 69 people were killed on 21 March 1960. What did this day become known as?
+        </legend>
+  
+        <ion-item class="t">
+          <ion-label>Segregation Massacre</ion-label>
+          <ion-radio checked="true" value="Segregation Massacre" (click)="goToSlide()"></ion-radio>
+        </ion-item>
+  
+        <ion-item class="t">
+          <ion-label>Robben Isaland Massacre</ion-label>
+          <ion-radio value="Robben Isaland Massacre" (click)="goToSlide()"></ion-radio>
+        </ion-item>
+  
+        <ion-item class="t">
+          <ion-label>Sharpville Massacre</ion-label>
+          <ion-radio value="Sharpville Massacre" (click)="goToSlide()"></ion-radio>
+        </ion-item>     
+        </fieldset>
+        </ion-list><br>
+        </ion-slide>
+  
+        <ion-slide class="s">
+        <h3>Question 2 of 5</h3><br>
+        <ion-list radio-group [(ngModel)]=Ans2>
+        <fieldset class="field">
+        <legend class="l"> The era of Apartheid lasted from ________ to ______(year)?
+        </legend>
+        <ion-item class="t">
+            <ion-label>1948–1994</ion-label>
+            <ion-radio checked="true" value="1948–1994" (click)="goToSlide3()"></ion-radio>
+        </ion-item>
+  
+        <ion-item class="t">
+            <ion-label>1958–1995</ion-label>
+            <ion-radio value="Platinium" (click)="goToSlide3()"></ion-radio>
+        </ion-item>
+  
+        <ion-item class="t">
+            <ion-label>1948–1996</ion-label>
+            <ion-radio value="1948–1996" (click)="goToSlide3()"></ion-radio>
+        </ion-item>   
+        </fieldset>
+        </ion-list><br>
+        </ion-slide>
+  
+  
+        <ion-slide class="s">
+        <h3>Question 3 of 5</h3><br> 
+        <ion-list radio-group [(ngModel)]=Ans3>
+        <fieldset class="field">
+        <legend class="l">Name the statement of core principles adopted by the Congress of the People in 1955?
+        </legend>
+        <ion-item class="t">
+        <ion-label>Freedom Charter</ion-label>
+        <ion-radio checked="true" value="Freedom Charter" (click)="goToSlide4()"></ion-radio>
+        </ion-item>
+  
+        <ion-item class="t">
+        <ion-label>Freedom Chart</ion-label>
+        <ion-radio value="Freedom Chart" (click)="goToSlide4()"></ion-radio>
+        </ion-item>
+  
+        <ion-item class="t">
+        <ion-label>Politics Charter</ion-label>
+        <ion-radio value="Politics Charter" (click)="goToSlide4()"></ion-radio>
+        </ion-item>       
+        </fieldset>
+        </ion-list><br>
+  
+        </ion-slide>
+  
+        <ion-slide  class="s">
+        <h3>Question 4 of 5</h3><br>
+        <ion-list radio-group [(ngModel)]=Ans4>
+        <fieldset class="field">
+          <legend class="l">In 1976 an iconic image of a 13 year boy who died during these riots was published around the world. Name this boy?
+          </legend>
+  
+          <ion-item class="t">
+              <ion-label>John Cock</ion-label>
+              <ion-radio checked="true" value="John Cock" (click)="goToSlide5()"></ion-radio>
+          </ion-item>
+          
+          <ion-item class="t">
+              <ion-label>David Pietersen</ion-label>
+              <ion-radio value="David Pietersen" (click)="goToSlide5()"></ion-radio>
+          </ion-item>
+          
+          <ion-item class="t">
+              <ion-label>Hector Pietersen</ion-label>
+              <ion-radio value="Hector Pietersen" (click)="goToSlide5()"></ion-radio>
+          </ion-item>
+            
+        </fieldset>
+        </ion-list><br>
+        </ion-slide>
+  
+        <ion-slide class="s">
+        <h3>Question 5 of 5</h3><br>
+        <ion-list  radio-group [(ngModel)]=Ans5>
+        <fieldset class="field">
+          <legend class="l">What was the armed wing of the ANC called?
+          </legend>
+          
+          <ion-item class="t">
+              <ion-label>Umakhonto we Sizwe</ion-label>
+              <ion-radio checked="true" value="Umakhonto we Sizwe"></ion-radio>
+          </ion-item>
+          
+          <ion-item class="t">
+              <ion-label>Umkhonto we Lizwe</ion-label>
+              <ion-radio value="Umkhonto we Lizwe"></ion-radio>
+          </ion-item>
+          
+          <ion-item class="t">
+              <ion-label>Umkhonto we Sizwe</ion-label>
+              <ion-radio value="Umkhonto we Sizwe"></ion-radio>
+          </ion-item>    
+        </fieldset>
+        </ion-list><br><br>
+        <button ion-button full round color="primary" (click)="addTotal()">Submit</button>   
+        </ion-slide>
+        </ion-slides>
+  
+        </div>
+  
+  
+        </ion-content>
+  

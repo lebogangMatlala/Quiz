@@ -1,0 +1,161 @@
+<!--
+  Generated template for the HistoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="purplecl">
+    <ion-title>History Category Level One</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans1>
+            <h3>Question 1 of 5</h3><br>
+                <fieldset color="light">
+                    <legend>A peaceful demonstration which ended in the
+                        death of 67 black South Africans shot by the
+                        police?
+                    </legend>
+                        <ion-item class="t">
+                            <ion-label >Shapville</ion-label>
+                            <ion-radio class="h" checked="true" value="Shapville" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Segregation</ion-label>
+                            <ion-radio value="Segregation" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Aparthaid</ion-label>
+                            <ion-radio value="Aparthaid" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                    </fieldset>
+                </ion-list><br>
+            
+</ion-slide>
+
+<ion-slide class="s">
+    
+        <ion-list radio-group [(ngModel)]=Ans2>
+                <h3>Question 2 of 5</h3><br>
+                <fieldset>
+                    <legend>One of the leaders of the ANC and President of
+                        South Africa from 1994 – 1999?
+                        </legend>
+                
+                        <ion-item class="t">
+                                <ion-label>Thabo Mbeki</ion-label>
+                                <ion-radio checked="true" value="Thabo Mbeki" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Nelson Mandela</ion-label>
+                                <ion-radio value="Nelson Mandela" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Albert Sesulu</ion-label>
+                                <ion-radio value="Albert Sesulu" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                </fieldset>
+                </ion-list><br>
+             
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans3>
+                <h3>Question 3 of 5</h3><br>
+                <fieldset>
+                    <legend>South African liberation movement, now a political party and was founded in 1959
+                    </legend>
+                    <ion-item class="t">
+                            <ion-label>EFF</ion-label>
+                            <ion-radio checked="true" value="EFF" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>IFP</ion-label>
+                            <ion-radio value="IFP" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>PAC</ion-label>
+                            <ion-radio value="PAC" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                </fieldset>
+                </ion-list><br>
+                   
+</ion-slide>
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans4>
+                <h3>Question 4 of 5</h3><br>
+                <fieldset>
+                    <legend>Territory set aside for black inhabitants of south African and south west Africa as part of the policy of apartheid
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Transvaal</ion-label>
+                            <ion-radio checked="true" value="Transvaal" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Homeland</ion-label>
+                            <ion-radio value="Homeland" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Transkie</ion-label>
+                            <ion-radio value="Transkie" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                    
+                </fieldset>
+            </ion-list><br>
+          
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans5>
+                <h3>Question 5 of 5</h3><br>
+                <fieldset>
+                    <legend>Political activity or a group who assembled to speak out and protest. In some cases, protests are violent, 
+                        disrupt the peace and stop business
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Political Science</ion-label>
+                            <ion-radio checked="true" value="Political Science"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Political Activist</ion-label>
+                            <ion-radio value="Political Activist"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Political Protest</ion-label>
+                            <ion-radio value="Political Protest"></ion-radio>
+                        </ion-item>
+                </fieldset>
+            </ion-list><br><br>
+
+            <button ion-button full round color="primary" (click)="addTotal()">Submit</button>
+            
+</ion-slide>
+
+</ion-slides>
+
+      
+
+  </div>
+
+
+</ion-content>

@@ -1,0 +1,154 @@
+<!--
+  Generated template for the HistorySecondPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="bluecl">
+    <ion-title>History Category Level TWO</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+    <div>
+        
+<ion-slides pager="true" >
+
+        <ion-slide class="s">
+                <ion-list radio-group [(ngModel)]=Ans1>
+                    <h3>Question 1 of 5</h3><br>
+                        <fieldset class="fie">
+                            <legend class="le">The action or state of setting someone or something apart from other people or things or being set apart is called?
+                            </legend>
+                                <ion-item class="t">
+                                    <ion-label >Shapville</ion-label>
+                                    <ion-radio class="h" checked="true" value="Shapville" (click)="goToSlide()"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>Segregation</ion-label>
+                                    <ion-radio value="Segregation" (click)="goToSlide()"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>Aparthaid</ion-label>
+                                    <ion-radio value="Aparthaid" (click)="goToSlide()"></ion-radio>
+                                </ion-item>
+                            </fieldset>
+                        </ion-list><br>
+                      
+        </ion-slide>
+        
+        <ion-slide class="s">
+            
+                <ion-list radio-group [(ngModel)]=Ans2>
+                        <h3>Question 2 of 5</h3><br>
+                        <fieldset class="fie">
+                            <legend class="le">the rights of citizens to political and social freedom and equality is called?
+                                </legend>
+                        
+                                <ion-item class="t">
+                                        <ion-label>Human Rights</ion-label>
+                                        <ion-radio checked="true" value="Human Rights" (click)="goToSlide3()"></ion-radio>
+                                    </ion-item>
+                                    
+                                    <ion-item class="t">
+                                        <ion-label>Civil Rights</ion-label>
+                                        <ion-radio value="Civil Rights" (click)="goToSlide3()"></ion-radio>
+                                    </ion-item>
+                                    
+                                    <ion-item class="t">
+                                        <ion-label>Children Rights</ion-label>
+                                        <ion-radio value="Children Rights" (click)="goToSlide3()"></ion-radio>
+                                    </ion-item>
+                        </fieldset>
+                        </ion-list><br>
+                        
+        </ion-slide>
+        
+        <ion-slide class="s">
+                <ion-list radio-group [(ngModel)]=Ans3>
+                        <h3>Question 3 of 5</h3><br>
+                        <fieldset class="fie">
+                            <legend class="le">The use of excessive and unnecessary force by a police officer toward a civilian is called?
+                            </legend>
+                            <ion-item class="t">
+                                    <ion-label>Inhumanity</ion-label>
+                                    <ion-radio checked="Inhumanity" value="EFF" (click)="goToSlide4()"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>Work Force Brutality</ion-label>
+                                    <ion-radio value="Work Force Brutality" (click)="goToSlide4()"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>Police Brutality</ion-label>
+                                    <ion-radio value="Police Brutality" (click)="goToSlide4()"></ion-radio>
+                                </ion-item>
+                        </fieldset>
+                        </ion-list><br>
+                          
+        </ion-slide>
+        <ion-slide class="s">
+                <ion-list radio-group [(ngModel)]=Ans4>
+                        <h3>Question 4 of 5</h3><br>
+                        <fieldset class="fie"> 
+                            <legend class="le">A South African politician who served as Prime Minister of South Africa from 1948 to 1954 & introduced apartheid?
+                                </legend>
+                                <ion-item class="t">
+                                    <ion-label>Dr Daniel Malan</ion-label>
+                                    <ion-radio checked="true" value="Dr Daniel Malan" (click)="goToSlide5()"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>F.W. DE Klerk </ion-label>
+                                    <ion-radio value="F.W. DE Klerk" (click)="goToSlide5()"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>Botha</ion-label>
+                                    <ion-radio value=" Botha" (click)="goToSlide5()"></ion-radio>
+                                </ion-item>
+                            
+                        </fieldset>
+                    </ion-list><br>
+                
+        </ion-slide>
+        
+        <ion-slide class="s">
+                <ion-list radio-group [(ngModel)]=Ans5>
+                        <h3>Question 5 of 5</h3><br>
+                        <fieldset class="fie">
+                            <legend class="le">A punitive ban that forbids relations with certain groups, cooperation's with a policy, or the handling of goods.
+                                </legend>
+                                <ion-item class="t">
+                                    <ion-label>Police</ion-label>
+                                    <ion-radio checked="true" value="Police"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>Politics</ion-label>
+                                    <ion-radio value="Politics"></ion-radio>
+                                </ion-item>
+                                
+                                <ion-item class="t">
+                                    <ion-label>Boycott</ion-label>
+                                    <ion-radio value="Boycott"></ion-radio>
+                                </ion-item>
+                        </fieldset>
+                    </ion-list><br><br>
+        
+                    <button ion-button full round color="primary" (click)="addTotal()">Submit</button>
+                    
+        </ion-slide>
+        
+        </ion-slides>
+        
+      </div>
+  
+  </ion-content>

@@ -1,0 +1,49 @@
+page-history-third {
+
+    .swiper-pagination-bullet-active{
+        background: #fff;
+       }
+       
+}
+
+.l{
+    background-color: rgba(174, 0, 255, 0.507);
+    color: #fff;
+    padding: 3px 6px;
+    
+}
+.field{
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.212);
+   
+}
+.field:hover{
+    background-color: rgba(174, 0, 255, 0.507);
+}
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.b{
+    border-style: none;
+    background-color: rgba(128, 128, 128, 0.678);
+    color: white;
+   
+}
+input {
+    margin: .4rem;
+}
+
+.background
+{
+    background-image: url('../../assets/imgs/b.jpg');
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
