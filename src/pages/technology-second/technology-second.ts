@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Values } from '../../app/Values';
 import nameArr from '../../app/namesArray';
-
+import { HomePage } from '../home/home';
+import { AlertController } from 'ionic-angular';
 
 
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
-import { CatergoriesPage } from '../catergories/catergories';
+import { TechnologyThirdPage } from '../technology-third/technology-third';
 /**
- * Generated class for the HistoryFifthPage page.
+ * Generated class for the TechnologySecondPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -18,22 +18,25 @@ import { CatergoriesPage } from '../catergories/catergories';
 
 @IonicPage()
 @Component({
-  selector: 'page-history-fifth',
-  templateUrl: 'history-fifth.html',
+  selector: 'page-technology-second',
+  templateUrl: 'technology-second.html',
 })
-export class HistoryFifthPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl:AlertController) {
+export class TechnologySecondPage {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HistoryFifthPage');
+    console.log('ionViewDidLoad HistoryPage');
   }
+
+
+ 
 
   @ViewChild(Slides) slides: Slides;
 
   goToSlide(){
     this.slides.slideTo(1,1000);
+ 
   }
 
   goToSlide3(){
@@ -47,8 +50,8 @@ export class HistoryFifthPage {
   goToSlide5(){
     this.slides.slideTo(4,1000);
   }
-  
-  answers1: String[] = ["Sharpville Massacre","1948–1994","Freedom Charter","Hector Pietersen","Umkhonto we Sizwe"];
+
+  answers1: String[] = ["2000","NASA","Steve Jobs","Motherboard","Blogging"];
   
   Ans1;
   Ans2;
@@ -57,9 +60,10 @@ export class HistoryFifthPage {
   Ans5;
   obj;
   count=0;
-
-  addTotal()
+  
+  addTech()
   {
+    
     let obj=new Values(this.Ans1);
     let obj2=new Values(this.Ans2);
     let obj3=new Values(this.Ans3);
@@ -87,7 +91,7 @@ export class HistoryFifthPage {
     {
      const confirm = this.alertCtrl.create({
        title: 'Congratulation',
-       message: 'Congratulation You have passed the all the stages.',
+       message: 'Congratulation You have passed the first stage.Go to the next Stage?',
        buttons: [
          {
            text: 'Replay',
@@ -96,18 +100,18 @@ export class HistoryFifthPage {
              this.count=0;
              console.log(nameArr);
              console.log(this.count)
-             this.navCtrl.setRoot(HistoryFifthPage);
+             this.navCtrl.setRoot(TechnologySecondPage);
              console.log('Disagree clicked');
            }
          },
          {
-           text: 'Well done',
+           text: 'Next Stage',
            handler: () => {
              nameArr.splice(0);
              this.count=0;
              console.log(nameArr);
              console.log(this.count);
-             this.navCtrl.setRoot(CatergoriesPage);
+             this.navCtrl.setRoot(TechnologyThirdPage);
              console.log('Agree clicked');
            }
          }
@@ -121,7 +125,7 @@ export class HistoryFifthPage {
  
      const exit = this.alertCtrl.create({
        title: 'Confirm User',
-       message: 'Unfortunately You have failed the stage.You only answered '+this.count +' correct',
+       message: 'Unfortunately You have failed the first stage.You only answered '+this.count +' correct',
        buttons: [
          {
            text: 'Go to home',
@@ -141,7 +145,7 @@ export class HistoryFifthPage {
              this.count=0;
              console.log(nameArr);
              console.log(this.count);
-             this.navCtrl.setRoot(HistoryFifthPage);
+             this.navCtrl.setRoot(TechnologySecondPage);
              console.log('Agree clicked');
            }
          }
@@ -151,6 +155,14 @@ export class HistoryFifthPage {
  
     }
 
+
+
   }
+
+
+
+
+
+
 
 }

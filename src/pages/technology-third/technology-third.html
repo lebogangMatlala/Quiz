@@ -1,0 +1,150 @@
+<!--
+  Generated template for the TechnologyThirdPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="purplecl">
+    <ion-title >Technology Level THREE</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+      <ion-content padding class="background"> 
+      <div>
+      <ion-slides pager="true">
+      <ion-slide class="s" >
+      <h3>Question 1 of 5</h3><br>
+      <ion-list radio-group [(ngModel)]=Ans1 >
+      <fieldset class="field">
+      <legend class="l">What does the Internet prefix WWW stand for?
+      </legend>
+
+      <ion-item class="t">
+        <ion-label>Wide Web World</ion-label>
+        <ion-radio checked="true" value="Wide Web World" (click)="goToSlide()"></ion-radio>
+      </ion-item>
+
+      <ion-item class="t">
+        <ion-label>World Wide Wild</ion-label>
+        <ion-radio value="World Wide Wild" (click)="goToSlide()"></ion-radio>
+      </ion-item>
+
+      <ion-item class="t">
+        <ion-label>World Wide Web</ion-label>
+        <ion-radio value="World Wide Web" (click)="goToSlide()"></ion-radio>
+      </ion-item>     
+      </fieldset>
+      </ion-list><br>
+      </ion-slide>
+
+      <ion-slide class="s">
+      <h3>Question 2 of 5</h3><br>
+      <ion-list radio-group [(ngModel)]=Ans2>
+      <fieldset class="field">
+      <legend class="l">A network designed to allow communication within an organization is called?
+      </legend>
+      <ion-item class="t">
+          <ion-label>In Iternet</ion-label>
+          <ion-radio checked="true" value="In Iternet" (click)="goToSlide3()"></ion-radio>
+      </ion-item>
+
+      <ion-item class="t">
+          <ion-label>In Internet</ion-label>
+          <ion-radio value="In Internet" (click)="goToSlide3()"></ion-radio>
+      </ion-item>
+
+      <ion-item class="t">
+          <ion-label>In Intranet</ion-label>
+          <ion-radio value="In Intranet" (click)="goToSlide3()"></ion-radio>
+      </ion-item>   
+      </fieldset>
+      </ion-list><br>
+      </ion-slide>
+
+
+      <ion-slide class="s">
+      <h3>Question 3 of 5</h3><br> 
+      <ion-list radio-group [(ngModel)]=Ans3>
+      <fieldset class="field">
+      <legend class="l">Which of these is not a kind of computer?
+      </legend>
+      <ion-item class="t">
+      <ion-label>Apple</ion-label>
+      <ion-radio checked="true" value="Apple" (click)="goToSlide4()"></ion-radio>
+      </ion-item>
+
+      <ion-item class="t">
+      <ion-label>Lada</ion-label>
+      <ion-radio value="Lada" (click)="goToSlide4()"></ion-radio>
+      </ion-item>
+
+      <ion-item class="t">
+      <ion-label>Lenovo</ion-label>
+      <ion-radio value="Lenovo" (click)="goToSlide4()"></ion-radio>
+      </ion-item>       
+      </fieldset>
+      </ion-list><br>
+
+      </ion-slide>
+
+      <ion-slide  class="s">
+      <h3>Question 4 of 5</h3><br>
+      <ion-list radio-group [(ngModel)]=Ans4>
+      <fieldset class="field">
+        <legend class="l">Which of these products is not made by the Apple Corporation?
+        </legend>
+
+        <ion-item class="t">
+            <ion-label>IMAX</ion-label>
+            <ion-radio checked="true" value="IMAX" (click)="goToSlide5()"></ion-radio>
+        </ion-item>
+        
+        <ion-item class="t">
+            <ion-label>IPHONE</ion-label>
+            <ion-radio value="IPHONE" (click)="goToSlide5()"></ion-radio>
+        </ion-item>
+        
+        <ion-item class="t">
+            <ion-label>APPLE WATCH</ion-label>
+            <ion-radio value="APPLE WATCH" (click)="goToSlide5()"></ion-radio>
+        </ion-item>
+          
+      </fieldset>
+      </ion-list><br>
+      </ion-slide>
+
+      <ion-slide class="s">
+      <h3>Question 5 of 5</h3><br>
+      <ion-list  radio-group [(ngModel)]=Ans5>
+      <fieldset class="field">
+        <legend class="l">What is the name for a computer pointing device?
+        </legend>
+        
+        <ion-item class="t">
+            <ion-label>A Mouse</ion-label>
+            <ion-radio checked="true" value="A Mouse"></ion-radio>
+        </ion-item>
+        
+        <ion-item class="t">
+            <ion-label>kEYBOARD</ion-label>
+            <ion-radio value="kEYBOARD"></ion-radio>
+        </ion-item>
+        
+        <ion-item class="t">
+            <ion-label>MONITOR</ion-label>
+            <ion-radio value="MONITOR"></ion-radio>
+        </ion-item>    
+      </fieldset>
+      </ion-list><br><br>
+      <button ion-button full round color="primary" (click)="addTech()">Submit</button>   
+      </ion-slide>
+      </ion-slides>
+
+      </div>
+
+
+      </ion-content>

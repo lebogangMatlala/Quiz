@@ -1,0 +1,148 @@
+<ion-header>
+
+<ion-navbar color="bluecl">
+<ion-title>Technology Level TWO</ion-title>
+</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+<ion-list radio-group [(ngModel)]=Ans1>
+  <h3>Question 1 of 5</h3><br>
+      <fieldset class="fie">
+          <legend class="le">How many computer languages are in use?
+          </legend>
+              <ion-item class="t">
+                  <ion-label >3500</ion-label>
+                  <ion-radio class="h" checked="true" value="3500" (click)="goToSlide()"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>2000</ion-label>
+                  <ion-radio value="2000" (click)="goToSlide()"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>5000</ion-label>
+                  <ion-radio value="5000" (click)="goToSlide()"></ion-radio>
+              </ion-item>
+          </fieldset>
+      </ion-list><br>
+    
+</ion-slide>
+
+<ion-slide class="s">
+
+<ion-list radio-group [(ngModel)]=Ans2>
+      <h3>Question 2 of 5</h3><br>
+      <fieldset class="fie">
+          <legend class="le">Which of these is not an early computer?
+              </legend>
+      
+              <ion-item class="t">
+                      <ion-label>SAGE</ion-label>
+                      <ion-radio checked="true" value="SAGE" (click)="goToSlide3()"></ion-radio>
+                  </ion-item>
+                  
+                  <ion-item class="t">
+                      <ion-label>NASA</ion-label>
+                      <ion-radio value="NASA" (click)="goToSlide3()"></ion-radio>
+                  </ion-item>
+                  
+                  <ion-item class="t">
+                      <ion-label>UNIVAC</ion-label>
+                      <ion-radio value="UNIVAC" (click)="goToSlide3()"></ion-radio>
+                  </ion-item>
+      </fieldset>
+      </ion-list><br>
+      
+</ion-slide>
+
+<ion-slide class="s">
+<ion-list radio-group [(ngModel)]=Ans3>
+      <h3>Question 3 of 5</h3><br>
+      <fieldset class="fie">
+          <legend class="le">Who founded Apple Computer?
+          </legend>
+          <ion-item class="t">
+                  <ion-label>Steve Jobs</ion-label>
+                  <ion-radio checked="Steve Jobs" value="Steve Jobs" (click)="goToSlide4()"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>Steve Wozniak </ion-label>
+                  <ion-radio value="Steve Wozniak " (click)="goToSlide4()"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>Mark Zuckerberg</ion-label>
+                  <ion-radio value="Mark Zuckerberg" (click)="goToSlide4()"></ion-radio>
+              </ion-item>
+      </fieldset>
+      </ion-list><br>
+        
+</ion-slide>
+<ion-slide class="s">
+<ion-list radio-group [(ngModel)]=Ans4>
+      <h3>Question 4 of 5</h3><br>
+      <fieldset class="fie"> 
+          <legend class="le">Which of these is not a peripheral, in computer terms?
+              </legend>
+              <ion-item class="t">
+                  <ion-label>Monitor</ion-label>
+                  <ion-radio checked="true" value="Monitor" (click)="goToSlide5()"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>Motherboard</ion-label>
+                  <ion-radio value="Motherboard" (click)="goToSlide5()"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>Mouse</ion-label>
+                  <ion-radio value="Mouse" (click)="goToSlide5()"></ion-radio>
+              </ion-item>
+          
+      </fieldset>
+  </ion-list><br>
+
+</ion-slide>
+
+<ion-slide class="s">
+<ion-list radio-group [(ngModel)]=Ans5>
+      <h3>Question 5 of 5</h3><br>
+      <fieldset class="fie">
+          <legend class="le">Which of the following is not one of the early "protocols," or ways to use the Internet?
+              </legend>
+              <ion-item class="t">
+                  <ion-label>Blogging</ion-label>
+                  <ion-radio checked="true" value="Blogging"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>HTTP</ion-label>
+                  <ion-radio value="HTTP"></ion-radio>
+              </ion-item>
+              
+              <ion-item class="t">
+                  <ion-label>Yahoo</ion-label>
+                  <ion-radio value="Yahoo"></ion-radio>
+              </ion-item>
+      </fieldset>
+  </ion-list><br><br>
+
+  <button ion-button full round color="primary" (click)="addTech()">Submit</button>
+  
+</ion-slide>
+
+</ion-slides>
+
+</div>
+
+</ion-content>

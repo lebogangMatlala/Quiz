@@ -1,0 +1,164 @@
+<!--
+  Generated template for the ArtPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="purplecl">
+    <ion-title>Art Level One</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans1>
+            <h3>Question 1 of 5</h3><br>
+                <fieldset color="light">
+                    <legend>Who refers to her work as her flights of the spirit?
+ 
+                    </legend>
+                        <ion-item class="t">
+                            <ion-label >Marlene Dumas</ion-label>
+                            <ion-radio class="h" checked="true" value="Marlene Dumas" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Bettie Cilliers-Barnard</ion-label>
+                            <ion-radio value="Bettie Cilliers-Barnard" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Maggie Laubser</ion-label>
+                            <ion-radio value="Maggie Laubser" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                    </fieldset>
+                </ion-list><br>
+            
+</ion-slide>
+
+<ion-slide class="s">
+    
+        <ion-list radio-group [(ngModel)]=Ans2>
+                <h3>Question 2 of 5</h3><br>
+                <fieldset>
+                    <legend>Which artist was nicknamed the King of Kitsch?
+                        </legend>
+                
+                        <ion-item class="t">
+                                <ion-label>Vladimir Tretchikoff</ion-label>
+                                <ion-radio checked="true" value="Vladimir Tretchikoff" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Walter Battiss</ion-label>
+                                <ion-radio value="Walter Battiss" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>JH Pierneef</ion-label>
+                                <ion-radio value="JH Pierneef" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                </fieldset>
+                </ion-list><br>
+             
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans3>
+                <h3>Question 3 of 5</h3><br>
+                <fieldset>
+                    <legend>Who sometimes goes by the pseudonym Joe Dog?
+                    </legend>
+                    <ion-item class="t">
+                            <ion-label>Anton Kannemeyer</ion-label>
+                            <ion-radio checked="true" value="Anton Kannemeyer" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>William Kentridge</ion-label>
+                            <ion-radio value="William Kentridge" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Robert Hodgins</ion-label>
+                            <ion-radio value="Robert Hodgins" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                </fieldset>
+                </ion-list><br>
+                   
+</ion-slide>
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans4>
+                <h3>Question 4 of 5</h3><br>
+                <fieldset>
+                    <legend>In 1940, the Johannesburg Art Gallery purchased one of this artist`s pictures, becoming the first picture painted by a 
+                      black artist to enter a museum collection. Who is the artist?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Dumile Feni</ion-label>
+                            <ion-radio checked="true" value="Dumile Feni" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Johannes Mashwangayi</ion-label>
+                            <ion-radio value="Johannes Mashwangayi" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Gerard Sekoto</ion-label>
+                            <ion-radio value="Gerard Sekoto" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                    
+                </fieldset>
+            </ion-list><br>
+          
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans5>
+                <h3>Question 5 of 5</h3><br>
+                <fieldset>
+                    <legend>In 1991, who was commissioned to create the first African 
+                      Art Car of a BMW 525i with typical motifs of the Ndembele tribe?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Ester Mahlangu</ion-label>
+                            <ion-radio checked="true" value="Ester Mahlangu"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Penny Siopis</ion-label>
+                            <ion-radio value="Penny Siopis"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Marlene Dumas</ion-label>
+                            <ion-radio value="Marlene Dumas"></ion-radio>
+                        </ion-item>
+                </fieldset>
+            </ion-list><br><br>
+
+            <button ion-button full round color="primary" (click)="addTotal()">Submit</button>
+            
+</ion-slide>
+
+</ion-slides>
+
+      
+
+  </div>
+
+
+</ion-content>
+
+
+
+

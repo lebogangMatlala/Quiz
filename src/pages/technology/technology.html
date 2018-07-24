@@ -1,0 +1,162 @@
+<!--
+  Generated template for the TechnologyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="purplecl">
+    <ion-title>Technology Level One</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans1>
+            <h3>Question 1 of 5</h3><br>
+                <fieldset color="light">
+                    <legend>	
+                      In which decade was the American 
+                      Institute of Electrical Engineers (AIEE) founded?
+                    </legend>
+                        <ion-item class="t">
+                            <ion-label >1850s</ion-label>
+                            <ion-radio class="h" checked="true" value="1850s" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>1880s</ion-label>
+                            <ion-radio value="1880s" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>1830s</ion-label>
+                            <ion-radio value="1830s" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                    </fieldset>
+                </ion-list><br>
+            
+</ion-slide>
+
+<ion-slide class="s">
+    
+        <ion-list radio-group [(ngModel)]=Ans2>
+                <h3>Question 2 of 5</h3><br>
+                <fieldset>
+                    <legend>What is part of a database that holds only one type of information?
+                        </legend>
+                
+                        <ion-item class="t">
+                                <ion-label>Record</ion-label>
+                                <ion-radio checked="true" value="Record" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Field</ion-label>
+                                <ion-radio value="Field" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>File</ion-label>
+                                <ion-radio value="File" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                </fieldset>
+                </ion-list><br>
+             
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans3>
+                <h3>Question 3 of 5</h3><br>
+                <fieldset>
+                    <legend>	
+                      'OS' computer abbreviation usually means ?
+                    </legend>
+                    <ion-item class="t">
+                            <ion-label>Open Software</ion-label>
+                            <ion-radio checked="true" value="Open Software" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Optical Sensor</ion-label>
+                            <ion-radio value="Optical Sensor" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Operating System</ion-label>
+                            <ion-radio value="Operating System" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                </fieldset>
+                </ion-list><br>
+                   
+</ion-slide>
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans4>
+                <h3>Question 4 of 5</h3><br>
+                <fieldset>
+                    <legend>In which decade with the first transatlantic radio broadcast occur?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>1860s</ion-label>
+                            <ion-radio checked="true" value="1860s" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>1870s</ion-label>
+                            <ion-radio value="1870s" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>1900s</ion-label>
+                            <ion-radio value="1900s" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                    
+                </fieldset>
+            </ion-list><br>
+          
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans5>
+                <h3>Question 5 of 5</h3><br>
+                <fieldset>
+                    <legend>	
+                      '.MOV' extension refers usually to what kind of file?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Audio file</ion-label>
+                            <ion-radio checked="true" value="Audio file"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Animation/movie file</ion-label>
+                            <ion-radio value="Animation/movie file"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Image file</ion-label>
+                            <ion-radio value="Image file"></ion-radio>
+                        </ion-item>
+                </fieldset>
+            </ion-list><br><br>
+
+            <button ion-button full round color="primary" (click)="addTech()">Submit</button>
+            
+</ion-slide>
+
+</ion-slides>
+
+      
+
+  </div>
+
+
+</ion-content>
+

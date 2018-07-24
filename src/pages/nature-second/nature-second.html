@@ -1,0 +1,155 @@
+<!--
+  Generated template for the NatureSecondPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="bluecl">
+      <ion-title>Nature Level TWO</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+
+
+<ion-content padding class="background">
+  <div>
+      
+<ion-slides pager="true" >
+
+      <ion-slide class="s">
+              <ion-list radio-group [(ngModel)]=Ans1>
+                  <h3>Question 1 of 5</h3><br>
+                      <fieldset class="fie">
+                          <legend class="le">Boll weevils are particularly destructive to which crop ?
+                          </legend>
+                              <ion-item class="t">
+                                  <ion-label >Cotton</ion-label>
+                                  <ion-radio class="h" checked="true" value="Cotton" (click)="goToSlide()"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Wheat</ion-label>
+                                  <ion-radio value="Wheat" (click)="goToSlide()"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Corn</ion-label>
+                                  <ion-radio value="Corn" (click)="goToSlide()"></ion-radio>
+                              </ion-item>
+                          </fieldset>
+                      </ion-list><br>
+                    
+      </ion-slide>
+      
+      <ion-slide class="s">
+          
+              <ion-list radio-group [(ngModel)]=Ans2>
+                      <h3>Question 2 of 5</h3><br>
+                      <fieldset class="fie">
+                          <legend class="le">Chemically pure gold is rated as how many carats ?
+                              </legend>
+                      
+                              <ion-item class="t">
+                                      <ion-label>24</ion-label>
+                                      <ion-radio checked="true" value="24" (click)="goToSlide3()"></ion-radio>
+                                  </ion-item>
+                                  
+                                  <ion-item class="t">
+                                      <ion-label>12</ion-label>
+                                      <ion-radio value="12" (click)="goToSlide3()"></ion-radio>
+                                  </ion-item>
+                                  
+                                  <ion-item class="t">
+                                      <ion-label>36</ion-label>
+                                      <ion-radio value="36" (click)="goToSlide3()"></ion-radio>
+                                  </ion-item>
+                      </fieldset>
+                      </ion-list><br>
+                      
+      </ion-slide>
+      
+      <ion-slide class="s">
+              <ion-list radio-group [(ngModel)]=Ans3>
+                      <h3>Question 3 of 5</h3><br>
+                      <fieldset class="fie">
+                          <legend class="le">Cork is harvested from the bark of what kind of tree ?
+                          </legend>
+                          <ion-item class="t">
+                                  <ion-label>Oak</ion-label>
+                                  <ion-radio checked="Oak" value="Oak" (click)="goToSlide4()"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Beech</ion-label>
+                                  <ion-radio value="Beech" (click)="goToSlide4()"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Elm</ion-label>
+                                  <ion-radio value="Elm" (click)="goToSlide4()"></ion-radio>
+                              </ion-item>
+                      </fieldset>
+                      </ion-list><br>
+                        
+      </ion-slide>
+      <ion-slide class="s">
+              <ion-list radio-group [(ngModel)]=Ans4>
+                      <h3>Question 4 of 5</h3><br>
+                      <fieldset class="fie"> 
+                          <legend class="le">A Manatee,sometimes known as sea cows..?
+                              </legend>
+                              <ion-item class="t">
+                                  <ion-label>Swims</ion-label>
+                                  <ion-radio checked="true" value="Swims" (click)="goToSlide5()"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Walks</ion-label>
+                                  <ion-radio value="Walks" (click)="goToSlide5()"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Flys</ion-label>
+                                  <ion-radio value="Flys" (click)="goToSlide5()"></ion-radio>
+                              </ion-item>
+                          
+                      </fieldset>
+                  </ion-list><br>
+              
+      </ion-slide>
+      
+      <ion-slide class="s">
+              <ion-list radio-group [(ngModel)]=Ans5>
+                      <h3>Question 5 of 5</h3><br>
+                      <fieldset class="fie">
+                          <legend class="le">From what animal do we get Cashmere ?
+                              </legend>
+                              <ion-item class="t">
+                                  <ion-label>Goats</ion-label>
+                                  <ion-radio checked="true" value="Goats"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Sheep</ion-label>
+                                  <ion-radio value="Sheep"></ion-radio>
+                              </ion-item>
+                              
+                              <ion-item class="t">
+                                  <ion-label>Buffalo</ion-label>
+                                  <ion-radio value="Buffalo"></ion-radio>
+                              </ion-item>
+                      </fieldset>
+                  </ion-list><br><br>
+      
+                  <button ion-button full round color="primary" (click)="addNature()">Submit</button>
+                  
+      </ion-slide>
+      
+      </ion-slides>
+      
+    </div>
+
+</ion-content>
+

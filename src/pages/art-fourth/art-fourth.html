@@ -1,0 +1,158 @@
+<!--
+  Generated template for the ArtFourthPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="bluecl">
+    <ion-title>Art Level Four</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans1>
+            <h3>Question 1 of 5</h3><br>
+                <fieldset color="light">
+                    <legend>What was the main subject in most Ancient African art?
+ 
+                    </legend>
+                        <ion-item class="t">
+                            <ion-label >People</ion-label>
+                            <ion-radio class="h" checked="true" value="People" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Rivers</ion-label>
+                            <ion-radio value="Rivers" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Plants</ion-label>
+                            <ion-radio value="Plants" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                    </fieldset>
+                </ion-list><br>
+</ion-slide>
+
+<ion-slide class="s">
+    
+        <ion-list radio-group [(ngModel)]=Ans2>
+                <h3>Question 2 of 5</h3><br>
+                <fieldset>
+                    <legend> Was most African art created in two dimensions or three dimensions?
+                        </legend>
+                
+                        <ion-item class="t">
+                                <ion-label>2</ion-label>
+                                <ion-radio checked="true" value="2" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>3</ion-label>
+                                <ion-radio value="3" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Both</ion-label>
+                                <ion-radio value="Both" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                </fieldset>
+                </ion-list><br>
+             
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans3>
+                <h3>Question 3 of 5</h3><br>
+                <fieldset>
+                    <legend>What was the most common material used in African art?
+                    </legend>
+                    <ion-item class="t">
+                            <ion-label>Metal</ion-label>
+                            <ion-radio checked="true" value="Metal" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Wood</ion-label>
+                            <ion-radio value="Wood" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Ivory</ion-label>
+                            <ion-radio value="Ivory" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                </fieldset>
+                </ion-list><br>
+                   
+</ion-slide>
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans4>
+                <h3>Question 4 of 5</h3><br>
+                <fieldset>
+                    <legend>What form of art was important in showing a person's status and wealth?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Jewelry</ion-label>
+                            <ion-radio checked="true" value="Jewelry" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Masks</ion-label>
+                            <ion-radio value="Masks" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Sculptures</ion-label>
+                            <ion-radio value="Sculptures" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                    
+                </fieldset>
+            </ion-list><br>
+          
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans5>
+                <h3>Question 5 of 5</h3><br>
+                <fieldset>
+                    <legend>What form of African art was used together with dancing and in religious ceremonies?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Masks</ion-label>
+                            <ion-radio checked="true" value="Masks"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Jewelry</ion-label>
+                            <ion-radio value="Jewelry"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Sculptures</ion-label>
+                            <ion-radio value="Sculptures"></ion-radio>
+                        </ion-item>
+                </fieldset>
+            </ion-list><br><br>
+
+            <button ion-button full round color="primary" (click)="addTotal()">Submit</button>
+            
+</ion-slide>
+
+</ion-slides>
+
+      
+
+  </div>
+
+
+</ion-content>
+

@@ -17,7 +17,7 @@
     <ion-list >
         <ion-item class="list">
           <ion-thumbnail item-start>
-            <img src="../../assets/imgs/saFlag.gif">
+            <img src="../../assets/imgs/saFlag.gif" style="width: 100px;height: 70px;">
           </ion-thumbnail>
           <h2>History</h2>
           <p class="p">know your<br>country</p>
@@ -25,11 +25,35 @@
         </ion-item>
           <ion-item class="list">
             <ion-thumbnail item-start>
-              <img src="../../assets/imgs/nature.jpg">
+              <img src="../../assets/imgs/nature.jpg" style="width: 100px;height: 70px;">
             </ion-thumbnail>
             <h2>Nature</h2>
             <p class="p">How well do you <br>know Nature?</p>
-            <button ion-button clear item-end color="light" >Get <br>Started</button>
+            <button ion-button clear item-end color="light" (click)="goToNature()">Get <br>Started</button>
+          </ion-item>
+          <ion-item class="list">
+            <ion-thumbnail item-start>
+              <img src="../../assets/imgs/sc.png" style="width: 100px;height: 70px;">
+            </ion-thumbnail>
+            <h2>Science </h2>
+            <p class="p">Lets become Scientists <br>know Nature?</p>
+            <button ion-button clear item-end color="light" (click)="goToScience()">Get <br>Started</button>
+          </ion-item>
+          <ion-item class="list">
+            <ion-thumbnail item-start>
+              <img src="../../assets/imgs/it.jpg" style="width: 100px;height: 70px;">
+            </ion-thumbnail>
+            <h2>Technology </h2>
+            <p class="p">Technology The use<br> of scientic knowladge</p>
+            <button ion-button clear item-end color="light" (click)="goToTechnology()">Get <br>Started</button>
+          </ion-item>
+          <ion-item class="list">
+            <ion-thumbnail item-start>
+              <img src="../../assets/imgs/at.jpg" style="width: 100px;height: 70px;">
+            </ion-thumbnail>
+            <h2>Art</h2>
+            <p class="p">Love your art</p>
+            <button ion-button clear item-end color="light" (click)="goToArt()">Get <br>Started</button>
           </ion-item>
         </ion-list>
 

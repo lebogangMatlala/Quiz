@@ -1,0 +1,155 @@
+<!--
+  Generated template for the ScienceSecondPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="bluecl">
+    <ion-title>Science Level TWO</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans1>
+            <h3>Question 1 of 5</h3><br>
+                <fieldset class="fie">
+                    <legend class="le">Which organ removes excess water from the blood?
+                    </legend>
+                        <ion-item class="t">
+                            <ion-label >Coccyx</ion-label>
+                            <ion-radio class="h" checked="true" value="Coccyx" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Kidney</ion-label>
+                            <ion-radio value="Kidney" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Pancreas</ion-label>
+                            <ion-radio value="Pancreas" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                    </fieldset>
+                </ion-list><br>
+              
+</ion-slide>
+
+<ion-slide class="s">
+    
+        <ion-list radio-group [(ngModel)]=Ans2>
+                <h3>Question 2 of 5</h3><br>
+                <fieldset class="fie">
+                    <legend class="le">Which is the most acidic part of the digestive system?
+                        </legend>
+                
+                        <ion-item class="t">
+                                <ion-label>Ears</ion-label>
+                                <ion-radio checked="true" value="Ears" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Stomach</ion-label>
+                                <ion-radio value="Stomach" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Kidney</ion-label>
+                                <ion-radio value="Kidney" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                </fieldset>
+                </ion-list><br>
+                
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans3>
+                <h3>Question 3 of 5</h3><br>
+                <fieldset class="fie">
+                    <legend class="le">A deficiency of which vitamin can cause scurvy?
+                    </legend>
+                    <ion-item class="t">
+                            <ion-label>Vitamin C</ion-label>
+                            <ion-radio checked="Vitamin C" value="Vitamin C" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Vitamin D</ion-label>
+                            <ion-radio value="Vitamin D" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Vitamin E</ion-label>
+                            <ion-radio value="Vitamin E" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                </fieldset>
+                </ion-list><br>
+                  
+</ion-slide>
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans4>
+                <h3>Question 4 of 5</h3><br>
+                <fieldset class="fie"> 
+                    <legend class="le">What is the average human body temperature when taken by a thermometer under the tongue?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>944 Degrees F</ion-label>
+                            <ion-radio checked="true" value="944 Degrees F" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>994 Degrees F</ion-label>
+                            <ion-radio value="994 Degrees F" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>984 Degrees F</ion-label>
+                            <ion-radio value="984 Degrees F" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                    
+                </fieldset>
+            </ion-list><br>
+        
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans5>
+                <h3>Question 5 of 5</h3><br>
+                <fieldset class="fie">
+                    <legend class="le"> What are the two main veins in the neck, returning blood from the brain to the heart?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Jugular Veins</ion-label>
+                            <ion-radio checked="true" value="Jugular Veins"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Veins</ion-label>
+                            <ion-radio value="Veins"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Brains</ion-label>
+                            <ion-radio value="Brains"></ion-radio>
+                        </ion-item>
+                </fieldset>
+            </ion-list><br><br>
+
+            <button ion-button full round color="primary" (click)="addScience()">Submit</button>
+            
+</ion-slide>
+
+</ion-slides>
+
+</div>
+
+</ion-content>
+

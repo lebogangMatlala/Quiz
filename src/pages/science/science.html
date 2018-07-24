@@ -1,0 +1,158 @@
+<!--
+  Generated template for the SciencePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="purplecl">
+    <ion-title>Science Level One</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans1>
+            <h3>Question 1 of 5</h3><br>
+                <fieldset color="light">
+                    <legend>
+                      Which part of the brain regulates physiological stability in the body?
+                    </legend>
+                        <ion-item class="t">
+                            <ion-label >Hypothalamus</ion-label>
+                            <ion-radio class="h" checked="true" value="Hypothalamus" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Brain</ion-label>
+                            <ion-radio value="Brain" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Hypothalumus</ion-label>
+                            <ion-radio value="Hypothalumus" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                    </fieldset>
+                </ion-list><br>
+            
+</ion-slide>
+
+<ion-slide class="s">
+    
+        <ion-list radio-group [(ngModel)]=Ans2>
+                <h3>Question 2 of 5</h3><br>
+                <fieldset>
+                    <legend>Which organ is responsible for regulating the blood sugar level?
+                        </legend>
+                
+                        <ion-item class="t">
+                                <ion-label>Pancreas</ion-label>
+                                <ion-radio checked="true" value="Pancreas" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Kidney</ion-label>
+                                <ion-radio value="Kidney" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Barn</ion-label>
+                                <ion-radio value="Barn" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                </fieldset>
+                </ion-list><br>
+             
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans3>
+                <h3>Question 3 of 5</h3><br>
+                <fieldset>
+                    <legend>Which organ makes urine?
+                    </legend>
+                    <ion-item class="t">
+                            <ion-label>Eyes</ion-label>
+                            <ion-radio checked="true" value="Eyes" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Kidney</ion-label>
+                            <ion-radio value="Kidney" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Womb</ion-label>
+                            <ion-radio value="Womb" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                </fieldset>
+                </ion-list><br>
+                   
+</ion-slide>
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans4>
+                <h3>Question 4 of 5</h3><br>
+                <fieldset>
+                    <legend>What is the scientific name for the human ''tail'?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Ear drum</ion-label>
+                            <ion-radio checked="true" value="Ear drum" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Erythrocyte</ion-label>
+                            <ion-radio value="Erythrocyte" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Coccyx</ion-label>
+                            <ion-radio value="Coccyx" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                    
+                </fieldset>
+            </ion-list><br>
+          
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans5>
+                <h3>Question 5 of 5</h3><br>
+                <fieldset>
+                    <legend>When might a person show rapid eye movement (REM)?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>During The Day</ion-label>
+                            <ion-radio checked="true" value="During The Day"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Morning</ion-label>
+                            <ion-radio value="Morning"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>During Sleep</ion-label>
+                            <ion-radio value="During Sleep"></ion-radio>
+                        </ion-item>
+                </fieldset>
+            </ion-list><br><br>
+
+            <button ion-button full round color="primary" (click)="addScience()">Submit</button>
+            
+</ion-slide>
+
+</ion-slides>
+
+      
+
+  </div>
+
+
+</ion-content>

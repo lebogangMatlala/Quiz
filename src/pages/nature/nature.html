@@ -1,0 +1,158 @@
+<!--
+  Generated template for the NaturePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="purplecl">
+    <ion-title>Nature Level One</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+<div>
+
+<ion-slides pager="true" >
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans1>
+            <h3>Question 1 of 5</h3><br>
+                <fieldset color="light">
+                    <legend>
+                      What is the largest type of shark ?
+                    </legend>
+                        <ion-item class="t">
+                            <ion-label >Basking Shark</ion-label>
+                            <ion-radio class="h" checked="true" value="Basking Shark" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Lemon Shark</ion-label>
+                            <ion-radio value="Lemon Shark" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Whale Shark</ion-label>
+                            <ion-radio value="Whale Shark" (click)="goToSlide()"></ion-radio>
+                        </ion-item>
+                    </fieldset>
+                </ion-list><br>
+            
+</ion-slide>
+
+<ion-slide class="s">
+    
+        <ion-list radio-group [(ngModel)]=Ans2>
+                <h3>Question 2 of 5</h3><br>
+                <fieldset>
+                    <legend>What is the name of a Squirrels home ?
+                        </legend>
+                
+                        <ion-item class="t">
+                                <ion-label>Drey</ion-label>
+                                <ion-radio checked="true" value="Drey" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Giant</ion-label>
+                                <ion-radio value="Giant" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                            
+                            <ion-item class="t">
+                                <ion-label>Barn</ion-label>
+                                <ion-radio value="Barn" (click)="goToSlide3()"></ion-radio>
+                            </ion-item>
+                </fieldset>
+                </ion-list><br>
+             
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans3>
+                <h3>Question 3 of 5</h3><br>
+                <fieldset>
+                    <legend>The device which measures nuclear radiation by counting the ionising particles is called?
+                    </legend>
+                    <ion-item class="t">
+                            <ion-label>Counter</ion-label>
+                            <ion-radio checked="true" value="Counter" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Geiger Counter</ion-label>
+                            <ion-radio value="Geiger Counter" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>William Counter</ion-label>
+                            <ion-radio value="William Counter" (click)="goToSlide4()"></ion-radio>
+                        </ion-item>
+                </fieldset>
+                </ion-list><br>
+                   
+</ion-slide>
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans4>
+                <h3>Question 4 of 5</h3><br>
+                <fieldset>
+                    <legend>Black Hairstreak and Pearblue and species of which insect ?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Spiders</ion-label>
+                            <ion-radio checked="true" value="Spiders" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Butterfly</ion-label>
+                            <ion-radio value="Butterfly" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Angel Fish</ion-label>
+                            <ion-radio value="Angel Fish" (click)="goToSlide5()"></ion-radio>
+                        </ion-item>
+                    
+                </fieldset>
+            </ion-list><br>
+          
+</ion-slide>
+
+<ion-slide class="s">
+        <ion-list radio-group [(ngModel)]=Ans5>
+                <h3>Question 5 of 5</h3><br>
+                <fieldset>
+                    <legend>Blue, Pilot and Minke are all species of what ?
+                        </legend>
+                        <ion-item class="t">
+                            <ion-label>Eagles</ion-label>
+                            <ion-radio checked="true" value="Eagles"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Butterflys</ion-label>
+                            <ion-radio value="Butterflys"></ion-radio>
+                        </ion-item>
+                        
+                        <ion-item class="t">
+                            <ion-label>Whales</ion-label>
+                            <ion-radio value="Whales"></ion-radio>
+                        </ion-item>
+                </fieldset>
+            </ion-list><br><br>
+
+            <button ion-button full round color="primary" (click)="addNature()">Submit</button>
+            
+</ion-slide>
+
+</ion-slides>
+
+      
+
+  </div>
+
+
+</ion-content>

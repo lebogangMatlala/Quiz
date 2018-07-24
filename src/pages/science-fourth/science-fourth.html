@@ -1,0 +1,150 @@
+<!--
+  Generated template for the ScienceFourthPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="purplecl">
+    <ion-title >Science Level FOUR</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background"> 
+  <div>
+  <ion-slides pager="true">
+  <ion-slide class="s" >
+  <h3>Question 1 of 5</h3><br>
+  <ion-list radio-group [(ngModel)]=Ans1 >
+  <fieldset class="field">
+  <legend class="l">Where do the Graafian follicles develop?
+  </legend>
+
+  <ion-item class="t">
+    <ion-label>Fallopian tubes</ion-label>
+    <ion-radio checked="true" value="Fallopian tubes" (click)="goToSlide()"></ion-radio>
+  </ion-item>
+
+  <ion-item class="t">
+    <ion-label>Ovaries Tubes</ion-label>
+    <ion-radio value="Ovaries Tubes" (click)="goToSlide()"></ion-radio>
+  </ion-item>
+
+  <ion-item class="t">
+    <ion-label>Ovaries</ion-label>
+    <ion-radio value="Ovaries" (click)="goToSlide()"></ion-radio>
+  </ion-item>     
+  </fieldset>
+  </ion-list><br>
+  </ion-slide>
+
+  <ion-slide class="s">
+  <h3>Question 2 of 5</h3><br>
+  <ion-list radio-group [(ngModel)]=Ans2>
+  <fieldset class="field">
+  <legend class="l">Which part of the body produces the excretory product urea?
+  </legend>
+  <ion-item class="t">
+      <ion-label>Liver</ion-label>
+      <ion-radio checked="true" value="Liver" (click)="goToSlide3()"></ion-radio>
+  </ion-item>
+
+  <ion-item class="t">
+      <ion-label>Heart</ion-label>
+      <ion-radio value="Heart" (click)="goToSlide3()"></ion-radio>
+  </ion-item>
+
+  <ion-item class="t">
+      <ion-label>Wrist</ion-label>
+      <ion-radio value="Wrist" (click)="goToSlide3()"></ion-radio>
+  </ion-item>   
+  </fieldset>
+  </ion-list><br>
+  </ion-slide>
+
+
+  <ion-slide class="s">
+  <h3>Question 3 of 5</h3><br> 
+  <ion-list radio-group [(ngModel)]=Ans3>
+  <fieldset class="field">
+  <legend class="l">Where would you find the pisiform bone?
+  </legend>
+  <ion-item class="t">
+  <ion-label>Hand</ion-label>
+  <ion-radio checked="true" value="Hand" (click)="goToSlide4()"></ion-radio>
+  </ion-item>
+
+  <ion-item class="t">
+  <ion-label>Wrist</ion-label>
+  <ion-radio value="Wrist" (click)="goToSlide4()"></ion-radio>
+  </ion-item>
+
+  <ion-item class="t">
+  <ion-label>Fingers</ion-label>
+  <ion-radio value="Fingers" (click)="goToSlide4()"></ion-radio>
+  </ion-item>       
+  </fieldset>
+  </ion-list><br>
+
+  </ion-slide>
+
+  <ion-slide  class="s">
+  <h3>Question 4 of 5</h3><br>
+  <ion-list radio-group [(ngModel)]=Ans4>
+  <fieldset class="field">
+    <legend class="l">What is the scientific name for the kneecap?
+    </legend>
+
+    <ion-item class="t">
+        <ion-label>Patella</ion-label>
+        <ion-radio checked="true" value="Patella" (click)="goToSlide5()"></ion-radio>
+    </ion-item>
+    
+    <ion-item class="t">
+        <ion-label>Patellas</ion-label>
+        <ion-radio value="Patellas" (click)="goToSlide5()"></ion-radio>
+    </ion-item>
+    
+    <ion-item class="t">
+        <ion-label>Patel</ion-label>
+        <ion-radio value="Patel" (click)="goToSlide5()"></ion-radio>
+    </ion-item>
+      
+  </fieldset>
+  </ion-list><br>
+  </ion-slide>
+
+  <ion-slide class="s">
+  <h3>Question 5 of 5</h3><br>
+  <ion-list  radio-group [(ngModel)]=Ans5>
+  <fieldset class="field">
+    <legend class="l">What is protected by the cranium?
+    </legend>
+    
+    <ion-item class="t">
+        <ion-label>Brain</ion-label>
+        <ion-radio checked="true" value="Brain"></ion-radio>
+    </ion-item>
+    
+    <ion-item class="t">
+        <ion-label>Brains </ion-label>
+        <ion-radio value="Brains"></ion-radio>
+    </ion-item>
+    
+    <ion-item class="t">
+        <ion-label>Heart</ion-label>
+        <ion-radio value="Heart"></ion-radio>
+    </ion-item>    
+  </fieldset>
+  </ion-list><br><br>
+  <button ion-button full round color="primary" (click)="addScience()">Submit</button>   
+  </ion-slide>
+  </ion-slides>
+
+  </div>
+
+
+  </ion-content>
