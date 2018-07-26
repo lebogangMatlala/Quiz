@@ -14,21 +14,24 @@ page-home {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
 }
 .im{
 
     margin: 0;
+    width: 350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-    height: 200px;
+    background-color:rgba(255, 255, 0, 0.692);
+    font-size: 1.5em;
+    
 }
 
 .im:hover{
-    background-color: purple;
+    background-color: rgb(216, 85, 188);
     opacity: 0.6;
-    border-radius: 40%;
+    border-radius:20px;
    
 }
 }
